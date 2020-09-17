@@ -1,0 +1,21 @@
+version: 2.1
+orbs:
+  ruby: circleci/ruby@1.1.0
+
+jobs:
+  tests:
+    docker:
+      - image: circleci/ruby:2.7.1
+    executor: ruby/default
+    steps:
+      - checkout
+      - ruby/install-deps
+      - ruby/rspec-test
+      - run:
+          name: Run quality checks
+          command: bin/quality
+
+workflows:
+  CD:
+    jobs:
+      - tests

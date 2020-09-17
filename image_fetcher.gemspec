@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lib/image_fetcher/version'
 
 Gem::Specification.new do |spec|
@@ -32,6 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'rake', '~> 12.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
+  spec.add_development_dependency 'rspec_junit_formatter'
   spec.add_development_dependency 'rubocop'
   spec.add_development_dependency 'rubocop-faker'
   spec.add_development_dependency 'rubocop-rspec'
