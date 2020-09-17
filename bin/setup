@@ -3,6 +3,8 @@ set -euo pipefail
 IFS=$'\n\t'
 set -vx
 
-bundle install
+# Make sure we have Bundler installed
+gem install bundler --conservative
 
-# Do any other automated setup that you need to do here
+# Installs all gems
+bundle check --path .bundle > /dev/null 2>&1 || bundle install --jobs=4 --retry=3 --path=.bundle
