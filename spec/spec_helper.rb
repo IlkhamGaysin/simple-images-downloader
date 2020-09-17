@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-if ENV["CI"]
-  require "simplecov"
+if ENV['CI']
+  require 'simplecov'
 
   SimpleCov.start do
     command_name "from_container_#{ENV.fetch('CIRCLE_NODE_INDEX', '')}"
     add_filter %w[bundle spec bin vendor tmp]
-    coverage_dir ENV.fetch("COVERAGE_DIR", ".coverage")
+    coverage_dir ENV.fetch('COVERAGE_DIR', '.coverage')
   end
 end
 
