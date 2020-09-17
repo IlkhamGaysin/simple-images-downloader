@@ -1,0 +1,79 @@
+require:
+  - rubocop-rspec
+  - rubocop-faker
+
+AllCops:
+  UseCache: true
+  MaxFilesInCache: 5
+  NewCops: enable
+  CacheRootDirectory: ./tmp/**
+  TargetRubyVersion: 2.7.1
+  DisplayCopNames: true
+  Exclude:
+    - bin/**/*
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/RepeatedDescription:
+  Enabled: false
+
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+
+Style/AndOr:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/SymbolArray:
+  Enabled: true
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+  ConsistentQuotesInMultiline: true
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+  SupportedStyles:
+    - compact
+    - expanded
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+  SupportedStyles:
+    - with_first_parameter
+    - with_fixed_indentation
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringMethods:
+  Enabled: true
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Enabled: false
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable
+  SupportedStylesAlignWith:
+    - keyword
+    - variable
+
+Capybara/FeatureMethods:
+  EnabledMethods:
+    - feature
+    - scenario
