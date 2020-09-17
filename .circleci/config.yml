@@ -6,16 +6,71 @@ jobs:
   tests:
     docker:
       - image: circleci/ruby:2.7.1
+    environment:
+      COVERAGE_DIR: ./coverage
     executor: ruby/default
     steps:
       - checkout
       - ruby/install-deps
+
+      - restore_cache:
+          keys:
+            - code-climate-reporter-v1
+
+      - run:
+          name:  Download cc-test-reporter
+          command: |
+            if ! [ -f ./cc-test-reporter ]; then
+              curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+              chmod +x ./cc-test-reporter
+            fi
+
+      - save_cache:
+          key: code-climate-reporter-v1
+          paths:
+            - ./cc-test-reporter
+
+      - run:
+          name: Prepare Code Climate Reporter
+          command: ./cc-test-reporter before-build
+
       - ruby/rspec-test
+
+      - run:
+          name: Code Climate Test Coverage
+          command: |
+            ./cc-test-reporter format-coverage -t simplecov -o "$COVERAGE_DIR/codeclimate.$CIRCLE_NODE_INDEX.json"
+
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - coverage/**
+            - cc-test-reporter
+
       - run:
           name: Run quality checks
           command: bin/quality
+
+  upload-coverage:
+    docker:
+    - image: circleci/ruby:2.7.1
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: .
+      - run:
+          command: |
+            ./cc-test-reporter sum-coverage --output - ./coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --debug --input -
 
 workflows:
   CD:
     jobs:
       - tests
+      - upload-coverage:
+          requires:
+            - tests
+          filters:
+            branches:
+              only:
+                - master
