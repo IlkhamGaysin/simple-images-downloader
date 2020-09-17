@@ -11,6 +11,8 @@ AllCops:
   DisplayCopNames: true
   Exclude:
     - bin/**/*
+    - tmp/**/*
+    - vendor/**/*
 
 RSpec/MultipleExpectations:
   Enabled: false
@@ -56,7 +58,7 @@ Layout/ParameterAlignment:
     - with_fixed_indentation
 
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  Enabled: true
 
 Style/StringMethods:
   Enabled: true
