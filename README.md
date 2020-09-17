@@ -1,5 +1,9 @@
 # ImageFetcher
 
+[![IlkhamGaysin](https://circleci.com/gh/IlkhamGaysin/image-fetcher.svg?style=svg)](https://circleci.com/gh/IlkhamGaysin/image-fetcher)
+[![Maintainability](https://api.codeclimate.com/v1/badges/de9273e101c55490bed6/maintainability)](https://codeclimate.com/github/IlkhamGaysin/image-fetcher/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/de9273e101c55490bed6/test_coverage)](https://codeclimate.com/github/IlkhamGaysin/image-fetcher/test_coverage)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/image_fetcher`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
