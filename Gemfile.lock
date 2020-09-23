@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     image_fetcher (1.0.0)
+      zeitwerk
 
 GEM
   remote: https://rubygems.org/
@@ -84,6 +85,7 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
+    zeitwerk (2.4.0)
 
 PLATFORMS
   ruby
@@ -104,6 +106,9 @@ DEPENDENCIES
   simplecov (~> 0.17.1)
   vcr
   webmock
+
+RUBY VERSION
+   ruby 2.7.1p83
 
 BUNDLED WITH
    2.1.4

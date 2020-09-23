@@ -3,7 +3,10 @@
 require 'open-uri'
 require 'tempfile'
 
-Dir[File.dirname(__FILE__).concat('/**/*.rb')].sort.each { |path| require path }
+require 'zeitwerk'
+
+loader = Zeitwerk::Loader.for_gem
+loader.setup
 
 module ImageFetcher
   def self.from_file(path)
