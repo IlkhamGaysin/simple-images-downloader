@@ -12,6 +12,11 @@ end
 
 require 'bundler/setup'
 require 'image_fetcher'
+require 'byebug'
+require 'faker'
+require 'vcr'
+
+Dir[File.dirname(__FILE__).concat('/support/**/*.rb')].sort.each { |f| require f }
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
