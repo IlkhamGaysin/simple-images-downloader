@@ -1,8 +1,8 @@
 # ImageDownloader
 
-[![IlkhamGaysin](https://circleci.com/gh/IlkhamGaysin/image-fetcher.svg?style=svg)](https://circleci.com/gh/IlkhamGaysin/image-fetcher)
-[![Maintainability](https://api.codeclimate.com/v1/badges/de9273e101c55490bed6/maintainability)](https://codeclimate.com/github/IlkhamGaysin/image-fetcher/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/de9273e101c55490bed6/test_coverage)](https://codeclimate.com/github/IlkhamGaysin/image-fetcher/test_coverage)
+[![IlkhamGaysin](https://circleci.com/gh/IlkhamGaysin/image-downloader.svg?style=svg)](https://circleci.com/gh/IlkhamGaysin/image-downloader)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d525377e85ead82c4ad5/maintainability)](https://codeclimate.com/github/IlkhamGaysin/image-downloader/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d525377e85ead82c4ad5/test_coverage)](https://codeclimate.com/github/IlkhamGaysin/image-downloader/test_coverage)
 
 This gem allows you download images from either source file with list of urls or plain url.
 The urls must be non redirectable. For now the feature is unsupported. The gem uses `OpenURI` class under the hood and is able to download as small files less than 10KB as large files 100MB.
