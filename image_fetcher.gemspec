@@ -3,22 +3,22 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require_relative 'lib/image_fetcher/version'
+require_relative 'lib/image_downloader/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'image-fetcher'
-  spec.version       = ImageFetcher::VERSION
+  spec.name          = 'image-downloader'
+  spec.version       = ImageDownloader::VERSION
   spec.authors       = ['IlkhamGaysin']
   spec.email         = ['ilgamgaysin@gmail.com']
 
-  spec.summary       = 'image-fetcher allows to download images from a file containing list of uri to those images.'
-  spec.homepage      = 'https://github.com/IlkhamGaysin/image-fetcher'
+  spec.summary       = 'image-downloader allows to download images from a file containing list of uri to those images.'
+  spec.homepage      = 'https://github.com/IlkhamGaysin/image-downloader'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.7.1')
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/IlkhamGaysin/image-fetcher'
-  spec.metadata['changelog_uri'] = 'https://github.com/IlkhamGaysin/image-fetcher/blob/master/CHANGELOG.md'
+  spec.metadata['source_code_uri'] = 'https://github.com/IlkhamGaysin/image-downloader'
+  spec.metadata['changelog_uri'] = 'https://github.com/IlkhamGaysin/image-downloader/blob/master/CHANGELOG.md'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
