@@ -1,0 +1,22 @@
+version: "2"
+plugins:
+  brakeman:
+    enabled: false
+  bundler-audit:
+    enabled: true
+  nodesecurity:
+    enabled: true
+  coffeelint:
+    enabled: false
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: false
+exclude_patterns:
+- bin/
+- spec/

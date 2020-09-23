@@ -75,7 +75,8 @@ Layout/EndAlignment:
     - keyword
     - variable
 
-Capybara/FeatureMethods:
-  EnabledMethods:
-    - feature
-    - scenario
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
+RSpec/NestedGroups:
+  Max: 4
