@@ -25,7 +25,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 23 Sep 2020 16:44:06 GMT
+  recorded_at: Wed, 23 Sep 2020 16:55:06 GMT
 - request:
     method: get
     uri: http://github.com/
@@ -51,5 +51,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 23 Sep 2020 16:44:06 GMT
+  recorded_at: Wed, 23 Sep 2020 16:55:07 GMT
 recorded_with: VCR 6.0.0
