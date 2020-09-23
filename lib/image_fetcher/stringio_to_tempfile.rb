@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module ImageFetcher
-  module StringIOToTempfile
+  module StringioToTempfile
     module_function
 
     def convert(stringio)

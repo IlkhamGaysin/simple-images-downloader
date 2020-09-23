@@ -16,7 +16,7 @@ module ImageFetcher
     def download
       puts "Downloading #{@uri}"
 
-      @downloaded_file = StringIOToTempfile.convert(downloaded_file) if downloaded_file.is_a?(StringIO)
+      @downloaded_file = StringioToTempfile.convert(downloaded_file) if downloaded_file.is_a?(StringIO)
 
       Dispenser.new(downloaded_file, @uri.path).place
 

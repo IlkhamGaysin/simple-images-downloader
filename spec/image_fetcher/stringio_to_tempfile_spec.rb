@@ -2,7 +2,7 @@
 
 require 'tempfile'
 
-RSpec.describe ImageFetcher::StringIOToTempfile do
+RSpec.describe ImageFetcher::StringioToTempfile do
   describe '.convert' do
     subject(:converted_file) { described_class.convert(stringio) }
 

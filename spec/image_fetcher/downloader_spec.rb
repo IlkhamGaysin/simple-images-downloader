@@ -73,7 +73,7 @@ RSpec.describe ImageFetcher::Downloader do
       end
 
       it 'converts StringIO to Tempfile and places images' do
-        expect(ImageFetcher::StringIOToTempfile)
+        expect(ImageFetcher::StringioToTempfile)
           .to receive(:convert).with(instance_of(StringIO)).and_return(tempfile)
         expect(ImageFetcher::Dispenser)
           .to receive(:new).with(tempfile, uri.path).and_return(dispenser)
