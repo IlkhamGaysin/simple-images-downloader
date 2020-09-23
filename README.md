@@ -1,4 +1,4 @@
-# SimpleImagesDownloader
+# Simple Images Downloader
 
 [![IlkhamGaysin](https://circleci.com/gh/IlkhamGaysin/simple-images-downloader.svg?style=svg)](https://circleci.com/gh/IlkhamGaysin/simple-images-downloader)
 [![Maintainability](https://api.codeclimate.com/v1/badges/df8b8fea5a09ad512d54/maintainability)](https://codeclimate.com/github/IlkhamGaysin/simple-images-downloader/maintainability)
