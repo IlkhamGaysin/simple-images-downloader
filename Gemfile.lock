@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    image-downloader (1.0.0)
+    simple-images-downloader (1.0.0)
       zeitwerk
 
 GEM
@@ -93,7 +93,6 @@ PLATFORMS
 DEPENDENCIES
   bundler-audit
   faker
-  image-downloader!
   memory_profiler
   pry
   pry-byebug
@@ -103,6 +102,7 @@ DEPENDENCIES
   rubocop
   rubocop-faker
   rubocop-rspec
+  simple-images-downloader!
   simplecov (~> 0.17.1)
   vcr
   webmock

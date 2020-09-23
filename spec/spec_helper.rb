@@ -11,7 +11,7 @@ if ENV['CI']
 end
 
 require 'bundler/setup'
-require 'image_downloader'
+require 'simple_images_downloader'
 require 'byebug'
 require 'faker'
 require 'vcr'

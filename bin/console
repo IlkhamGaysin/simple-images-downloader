@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'image_downloader'
+require 'simple_images_downloader'
 require 'pry'
 
 Pry.start

@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://github.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SimpleImagesDownloader/1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Content-Length:
+      - '0'
+      Location:
+      - https://github.com/
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Wed, 23 Sep 2020 17:31:07 GMT
+- request:
+    method: get
+    uri: http://github.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SimpleImagesDownloader/1.0.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Content-Length:
+      - '0'
+      Location:
+      - https://github.com/
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Wed, 23 Sep 2020 17:31:08 GMT
+recorded_with: VCR 6.0.0
