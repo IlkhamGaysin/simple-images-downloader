@@ -3,6 +3,7 @@
 [![IlkhamGaysin](https://circleci.com/gh/IlkhamGaysin/simple-images-downloader.svg?style=svg)](https://circleci.com/gh/IlkhamGaysin/simple-images-downloader)
 [![Maintainability](https://api.codeclimate.com/v1/badges/df8b8fea5a09ad512d54/maintainability)](https://codeclimate.com/github/IlkhamGaysin/simple-images-downloader/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/df8b8fea5a09ad512d54/test_coverage)](https://codeclimate.com/github/IlkhamGaysin/simple-images-downloader/test_coverage)
+[![Gem Version](https://badge.fury.io/rb/simple-images-downloader.svg)](https://badge.fury.io/rb/simple-images-downloader)
 
 This gem allows you download images from either source file with list of urls or plain url.
 The urls must be non redirectable. For now the feature is unsupported. The gem uses `OpenURI` class under the hood and is able to download as small files less than 10KB as large files 100MB.
