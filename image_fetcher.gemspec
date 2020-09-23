@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.7.1')
 
-  spec.metadata['allowed_push_host'] = 'http://rubygems.com'
+  spec.metadata['allowed_push_host'] = 'http://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/IlkhamGaysin/image-fetcher'
