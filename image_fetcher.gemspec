@@ -6,7 +6,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require_relative 'lib/image_fetcher/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'image_fetcher'
+  spec.name          = 'image-fetcher'
   spec.version       = ImageFetcher::VERSION
   spec.authors       = ['IlkhamGaysin']
   spec.email         = ['ilgamgaysin@gmail.com']

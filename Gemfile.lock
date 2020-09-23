@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    image_fetcher (1.0.0)
+    image-fetcher (1.0.0)
       zeitwerk
 
 GEM
@@ -93,7 +93,7 @@ PLATFORMS
 DEPENDENCIES
   bundler-audit
   faker
-  image_fetcher!
+  image-fetcher!
   memory_profiler
   pry
   pry-byebug
