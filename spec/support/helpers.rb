@@ -2,7 +2,7 @@
 
 module Helpers
   def fixtures_path(name = nil)
-    ImageFetcher.root.concat("/spec/fixtures/#{name}")
+    ImageDownloader.root.concat("/spec/fixtures/#{name}")
   end
 
   def fixtures_files(path)

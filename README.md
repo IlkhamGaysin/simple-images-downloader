@@ -1,4 +1,4 @@
-# ImageFetcher
+# ImageDownloader
 
 [![IlkhamGaysin](https://circleci.com/gh/IlkhamGaysin/image-fetcher.svg?style=svg)](https://circleci.com/gh/IlkhamGaysin/image-fetcher)
 [![Maintainability](https://api.codeclimate.com/v1/badges/de9273e101c55490bed6/maintainability)](https://codeclimate.com/github/IlkhamGaysin/image-fetcher/maintainability)
@@ -15,7 +15,7 @@ The urls must be non redirectable. For now the feature is unsupported. The gem u
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'image-fetcher'
+gem 'image-downloader'
 ```
 
 And then execute:
@@ -24,7 +24,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install image-fetcher
+    $ gem install image-downloader
 
 ## Usage
 
@@ -33,43 +33,43 @@ The gem is provided with executable.
 You can either run plain commmand with file containing list of url:
 
 ```bash
-image-fetcher <path_to_file>
+image-downloader <path_to_file>
 ```
 
 Or you can load gem and use public API:
 
-- `ImageFetcher.from_file` - allows download images from file containing urls
+- `ImageDownloader.from_file` - allows download images from file containing urls
 
 ```ruby
-[1] pry(main)> require 'image_fetcher'
+[1] pry(main)> require 'image_downloader'
 
 [2] pry(main)> path = File.expand_path("./urls.txt")
 
-[3] pry(main)> ImageFetcher.from_file(path)
-Downloading https://test-for-image-fetcher.s3.eu-central-1.amazonaws.com/7.5MB.jpg
+[3] pry(main)> ImageDownloader.from_file(path)
+Downloading https://test-for-image-downloader.s3.eu-central-1.amazonaws.com/7.5MB.jpg
 Downloading is finished
-Downloading https://test-for-image-fetcher.s3.eu-central-1.amazonaws.com/less_than_10kb.png
+Downloading https://test-for-image-downloader.s3.eu-central-1.amazonaws.com/less_than_10kb.png
 Downloading is finished
 ```
 
-- `ImageFetcher.from_url` - allows download image from url
+- `ImageDownloader.from_url` - allows download image from url
 
 ```ruby
-[1] pry(main)> require 'image_fetcher'
+[1] pry(main)> require 'image_downloader'
 
-[2] pry(main)> url = 'https://test-for-image-fetcher.s3.eu-central-1.amazonaws.com/7.5MB.jpg'
+[2] pry(main)> url = 'https://test-for-image-downloader.s3.eu-central-1.amazonaws.com/7.5MB.jpg'
 
-[3] pry(main)> ImageFetcher.from_url(url)
-Downloading https://test-for-image-fetcher.s3.eu-central-1.amazonaws.com/7.5MB.jpg
+[3] pry(main)> ImageDownloader.from_url(url)
+Downloading https://test-for-image-downloader.s3.eu-central-1.amazonaws.com/7.5MB.jpg
 Downloading is finished
 ```
 
 You can also configure the place where the images would be stored to by using **by default the images stored in a directory the script is run**:
 
 ```ruby
-[1] pry(main)> require 'image_fetcher'
+[1] pry(main)> require 'image_downloader'
 
-[2] pry(main)> ImageFetcher::Configuration.configure do  |config|
+[2] pry(main)> ImageDownloader::Configuration.configure do  |config|
 [2] pry(main)*   config.destination = "./tmp/"
 [2] pry(main)* end
 ```
@@ -82,7 +82,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/IlkhamGaysin/image-fetcher. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/IlkhamGaysin/image-fetcher/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/IlkhamGaysin/image-downloader. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/IlkhamGaysin/image-downloader/blob/master/CODE_OF_CONDUCT.md).
 
 
 ## License
@@ -91,4 +91,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the ImageFetcher project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/IlkhamGaysin/image-fetcher/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the ImageDownloader project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/IlkhamGaysin/image-downloader/blob/master/CODE_OF_CONDUCT.md).
