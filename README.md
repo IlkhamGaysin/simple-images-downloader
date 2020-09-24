@@ -7,6 +7,7 @@
 
 This gem allows you download images from either source file with list of urls or plain url.
 The urls must be non redirectable. For now the feature is unsupported. The gem uses `OpenURI` class under the hood and is able to download as small files less than 10KB as large files, for example 100MB.
+**Supported formats: png, jpg, gif, jpeg**
 
 ## Dependencies
   - Ruby >= 2.7.1
@@ -65,7 +66,8 @@ Downloading https://test-for-simple-images-downloader.s3.eu-central-1.amazonaws.
 Downloading is finished
 ```
 
-You can also configure the place where the images would be stored to by using **by default the images stored in a directory the script is run**:
+**By default the images stored in a directory the script is run.**
+You can also configure the place where the images would be stored to:
 
 ```ruby
 [1] pry(main)> require 'simple_images_downloader'
