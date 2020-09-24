@@ -6,7 +6,7 @@
 [![Gem Version](https://badge.fury.io/rb/simple-images-downloader.svg)](https://badge.fury.io/rb/simple-images-downloader)
 
 This gem allows you download images from either source file with list of urls or plain url.
-The urls must be non redirectable. For now the feature is unsupported. The gem uses `OpenURI` class under the hood and is able to download as small files less than 10KB as large files 100MB.
+The urls must be non redirectable. For now the feature is unsupported. The gem uses `OpenURI` class under the hood and is able to download as small files less than 10KB as large files, for example 100MB.
 
 ## Dependencies
   - Ruby >= 2.7.1
