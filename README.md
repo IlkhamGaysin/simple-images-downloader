@@ -7,6 +7,7 @@
 
 This gem allows you download images from either source file with list of urls or plain url.
 The urls must be non redirectable. For now the feature is unsupported. The gem uses `OpenURI` class under the hood and is able to download as small files less than 10KB as large files, for example 100MB.
+
 **Supported formats: png, jpg, gif, jpeg**
 
 ## Dependencies
