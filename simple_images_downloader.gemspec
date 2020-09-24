@@ -30,19 +30,18 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler-audit'
-  spec.add_development_dependency 'faker'
-  spec.add_development_dependency 'memory_profiler'
-  spec.add_development_dependency 'pry'
-  spec.add_development_dependency 'pry-byebug'
+  spec.add_runtime_dependency 'zeitwerk', '~> 2.4.0'
+
+  spec.add_development_dependency 'faker', '~> 2.14'
+  spec.add_development_dependency 'pry', '~> 0.13.1'
+  spec.add_development_dependency 'pry-byebug', '~> 3.9.0'
   spec.add_development_dependency 'rake', '~> 12.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rspec_junit_formatter'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'rubocop-faker'
-  spec.add_development_dependency 'rubocop-rspec'
+  spec.add_development_dependency 'rspec_junit_formatter', '~> 0.4.1'
+  spec.add_development_dependency 'rubocop', '~> 0.91.0'
+  spec.add_development_dependency 'rubocop-faker', '~> 1.1.0'
+  spec.add_development_dependency 'rubocop-rspec', '~> 1.43.2'
   spec.add_development_dependency 'simplecov', '~> 0.17.1'
-  spec.add_development_dependency 'vcr'
-  spec.add_development_dependency 'webmock'
-  spec.add_runtime_dependency 'zeitwerk'
+  spec.add_development_dependency 'vcr', '~> 6.0.0'
+  spec.add_development_dependency 'webmock', '~> 3.9.1'
 end
