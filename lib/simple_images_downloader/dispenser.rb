@@ -2,6 +2,10 @@
 
 module SimpleImagesDownloader
   class Dispenser
+    extend Forwardable
+
+    def_delegator 'SimpleImagesDownloader::Configuration', :destination, :destination_dir
+
     def initialize(source, remote_path)
       @source      = source
       @remote_path = remote_path
@@ -13,8 +17,6 @@ module SimpleImagesDownloader
       FileUtils.mv @source, destination
     end
 
-    private
-
     def destination
       @destination ||= destination_dir + file_name
     end
@@ -23,8 +25,6 @@ module SimpleImagesDownloader
       @file_name ||= File.basename(@source) + File.extname(@remote_path)
     end
 
-    def destination_dir
-      Configuration.destination
-    end
+    private :destination_dir, :destination, :file_name
   end
 end
