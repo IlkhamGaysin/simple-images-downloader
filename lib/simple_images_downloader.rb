@@ -2,6 +2,8 @@
 
 require 'open-uri'
 require 'tempfile'
+require 'forwardable'
+require 'singleton'
 require 'zeitwerk'
 
 loader = Zeitwerk::Loader.for_gem
